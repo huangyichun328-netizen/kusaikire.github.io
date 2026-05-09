@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUNDSCAPES & LANDSCAPES | 瞬息声影 - by 纯子</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@200;300;400&family=Noto+Serif+SC:wght@300;400&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --text-color: #f0f0f0;
+            --accent-color: #666;
+            --line-color: #222;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', 'Noto Serif SC', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 5vh 4vw;
+        }
+
+        header {
+            text-align: center;
+            margin: 15vh 0 20vh;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.4em;
+            margin-bottom: 15px;
+        }
+
+        .section-header {
+            margin-bottom: 6vh;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 2vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            letter-spacing: 0.15em;
+        }
+
+        .section-num {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            letter-spacing: 0.2em;
+        }
+
+        .section {
+            margin-bottom: 25vh;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeIn 1.5s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+            position: relative;
+            background-color: #111;
+        }
+
+        .img-wrapper:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Grids */
+        .grid-wide {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2vw;
+        }
+        
+        .col-12 { grid-column: span 12; }
+        .col-8 { grid-column: span 8; }
+        .col-7 { grid-column: span 7; }
+        .col-6 { grid-column: span 6; }
+        .col-5 { grid-column: span 5; }
+        .col-4 { grid-column: span 4; }
+
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2vw;
+            align-items: start;
+        }
+
+        .masonry-col {
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--line-color);
+            padding-top: 8vh;
+            margin-top: 20vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 5vw;
+            padding-bottom: 10vh;
+        }
+
+        .footer-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4vh 2vw;
+        }
+
+        .info-item span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 8px;
+        }
+
+        .info-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            color: #ccc;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 900px) {
+            .grid-wide, .masonry-grid, footer {
+                display: flex;
+                flex-direction: column;
+                gap: 4vh;
+            }
+            .info-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>SOUNDSCAPES</h1>
+        </header>
+
+        <!-- 01 光影 (SPECTRUM) -->
+        <div class="section" style="animation-delay: 0.2s;">
+            <div class="section-header">
+                <div class="section-title">01 光影 / Spectrum</div>
+                <div class="section-num">VOL. I</div>
+            </div>
+            
+            <div class="grid-wide">
+                <div class="img-wrapper col-12"><img src="HYC05212.jpg" alt="Red Blue Stage"></div>
+                
+                <div class="img-wrapper col-7"><img src="IMG_0442.JPG" alt="Red Smoke"></div>
+                <div class="img-wrapper col-5"><img src="DSC04694.jpg" alt="Cyan Bass"></div>
+                
+                <div class="img-wrapper col-4"><img src="IMG_3984.jpg" alt="Orange Energy"></div>
+                <div class="img-wrapper col-4"><img src="be569adebga05dfedd62e2229af0761c.jpg" alt="Colorful prop"></div>
+                <div class="img-wrapper col-4"><img src="bb79a09adhf986eb9fe8514d991888c5.jpg" alt="Projected text"></div>
+                
+                <div class="img-wrapper col-8"><img src="3416085cao64bb0baf2dd2036c0a7b91.jpg" alt="20 Balloons"></div>
+                <div class="img-wrapper col-4"><img src="IMG_8341.jpg" alt="B&W Skeleton"></div>
+            </div>
+        </div>
+
+        <!-- 02 凝视 (GAZE) -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">02 凝视 / Gaze</div>
+                <div class="section-num">VOL. II</div>
+            </div>
+            
+            <div class="masonry-grid">
+                <div class="masonry-col">
+                    <div class="img-wrapper"><img src="IMG_8456.jpg" alt="Profile girl"></div>
+                    <div class="img-wrapper"><img src="IMG_0291.jpg" alt="B&W leaning back"></div>
+                    <div class="img-wrapper"><img src="IMG_0136.jpg" alt="Leather Guitar"></div>
+                </div>
+                <div class="masonry-col" style="margin-top: 5vh;">
+                    <div class="img-wrapper"><img src="IMG_0265.jpg" alt="Sweat boy"></div>
+                    <div class="img-wrapper"><img src="c27a99372o4a4e939daa0090f6a802c0.jpg" alt="Red Guitar kneeling"></div>
+                    <div class="img-wrapper"><img src="IMG_0140.jpg" alt="Drummer"></div>
+                </div>
+                <div class="masonry-col">
+                    <div class="img-wrapper"><img src="IMG_4448.jpg" alt="Looking up"></div>
+                    <div class="img-wrapper"><img src="IMG_4444.jpg" alt="Blue guitar lookup"></div>
+                    <div class="img-wrapper"><img src="IMG_8350.jpg" alt="Vocalist"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 03 沉浸 (IMMERSION) -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">03 沉浸 / Immersion</div>
+                <div class="section-num">VOL. III</div>
+            </div>
+            
+            <div class="grid-wide">
+                <div class="img-wrapper col-12"><img src="love_stage.jpg" alt="LOVE STAGE Wide"></div>
+                
+                <div class="img-wrapper col-6"><img src="IMG_8491.jpg" alt="Guitar facing crowd"></div>
+                <div class="img-wrapper col-6"><img src="IMG_0450.jpg" alt="Confetti"></div>
+                
+                <div class="img-wrapper col-12"><img src="IMG_8399.jpg" alt="Butterfly Stage"></div>
+                
+                <div class="img-wrapper col-8"><img src="strawberry_stage.jpg" alt="STRAWBERRY STAGE Wide"></div>
+                <div class="img-wrapper col-4"><img src="DSC04669.jpg" alt="Wide Band Stage"></div>
+
+                <div class="img-wrapper col-12"><img src="cf48e6c14n561ee932d8b7322b569842.jpg" alt="Band bowing"></div>
+            </div>
+        </div>
+
+        <!-- 04 幕间 (INTERLUDE) -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">04 幕间 / Interlude</div>
+                <div class="section-num">VOL. IV</div>
+            </div>
+            
+            <div class="grid-wide">
+                <div class="img-wrapper col-6"><img src="IMG_4079.jpg" alt="Sunglasses Backstage"></div>
+                <div class="img-wrapper col-6"><img src="IMG_4445.JPG" alt="Holding hands"></div>
+                
+                <div class="img-wrapper col-4"><img src="IMG_6342.jpg" alt="Festival Girls"></div>
+                <div class="img-wrapper col-4"><img src="IMG_6339.jpg" alt="Plaid Peace"></div>
+                <div class="img-wrapper col-4"><img src="IMG_6334.jpg" alt="Blue Inflatable"></div>
+                
+                <div class="img-wrapper col-12"><img src="IMG_8459.jpg" alt="Bells hand"></div>
+            </div>
+        </div>
+
+        <!-- 05 风光漫游 (LANDSCAPES) -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">05 风光漫游 / Landscapes</div>
+                <div class="section-num">VOL. V</div>
+            </div>
+            
+            <div class="grid-wide" style="margin-bottom: 2vw;">
+                <div class="img-wrapper col-7"><img src="IMG_8487.jpg" alt="Park"></div>
+                <div class="img-wrapper col-5"><img src="jellyfish.jpg" alt="Jellyfish"></div>
+            </div>
+
+            <div class="masonry-grid">
+                <!-- 第一列 -->
+                <div class="masonry-col">
+                    <div class="img-wrapper"><img src="IMG_4421.jpg" alt="Arch of Peace"></div>
+                    <div class="img-wrapper"><img src="snow_town.jpg" alt="Snow Town"></div>
+                    <div class="img-wrapper"><img src="venice_boats.jpg" alt="Venice Boats"></div>
+                </div>
+                <!-- 第二列 -->
+                <div class="masonry-col" style="margin-top: 6vh;">
+                    <div class="img-wrapper"><img src="venice_gondola.jpg" alt="Venice Gondola"></div>
+                    <div class="img-wrapper"><img src="wisteria_cafe.jpg" alt="Wisteria Cafe"></div>
+                    <div class="img-wrapper"><img src="church_interior.jpg" alt="Church Interior"></div>
+                </div>
+                <!-- 第三列 (加入了新图片 street_artist) -->
+                <div class="masonry-col" style="margin-top: 3vh;">
+                    <div class="img-wrapper"><img src="venice_dome.jpg" alt="Venice Dome"></div>
+                    <div class="img-wrapper"><img src="vatican_statues.jpg" alt="Vatican Statues"></div>
+                    <div class="img-wrapper"><img src="street_artist.jpg" alt="Street Artist"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photographer Info Footer -->
+        <footer>
+            <div class="footer-title">
+                ABOUT THE<br>PHOTOGRAPHER
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>Name</span>
+                    <p>纯子</p>
+                </div>
+                <div class="info-item">
+                    <span>Location</span>
+                    <p>福建 厦门</p>
+                </div>
+                <div class="info-item">
+                    <span>Experience</span>
+                    <p>拍摄演出 40 余场</p>
+                </div>
+                <div class="info-item">
+                    <span>Xiaohongshu (RED)</span>
+                    <p>- HUANGYICHEN</p>
+                </div>
+                <div class="info-item">
+                    <span>Equipment</span>
+                    <p>a7m3<br>70-200 F2.8 / 24-105 F4<br>16 F1.8 / 11 F1.8</p>
+                </div>
+                <div class="info-item">
+                    <span>Contact / Email</span>
+                    <p>huangyichun0328@163.com</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.section, footer').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
